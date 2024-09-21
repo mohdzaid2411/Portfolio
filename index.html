@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Comatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio Website </title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/9b4106887e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">             
+  <div class="container">        
+    <nav>
+      <img src="images/logo.jpg" class="logo">      
+      <ul id="sidemenu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fas fa-times" onclick="closemenu()"></i>
+      </ul>
+      <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="header-text">
+      <p>Full-stack developer</p>
+      <h1>Hi, I'm <span>Mohd Zaid</span></h1>
+    </div>
+  </div>
+</div>
+
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="images/user.jpg">
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p class="styled-paragraph">Hello, I'm Mohd Zaid, an enthusiastic and ambitious full-stack developer passionate about technology and eager to embark on a journey in full-stack development. As a recent graduate with a Bachelor of Technology in Computer Science and Engineering, I bring a strong foundation in programming languages like Java, JavaScript, Python, and Data Structures & Algorithms (DSA), along with a hunger to learn and grow in this dynamic field. I am excited to apply my problem-solving skills and creativity to contribute to innovative software solutions and collaborate with experienced professionals to achieve excellence in full-stack development.</p>
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>Web Development</span><br>Web Appp Development</li>
+            <li><span>App Development</span><br>Building Android/ios apps</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>2020-2023</span><br>Training at CMR Institute of Technology</li>
+            <li><span>2023-2024</span><br>Intern at Varcons Technology</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>Web Development</span><br>B.Tech from CMRIT Bangalore</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- -------------------------- --services-------------------------->
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Web design</h2>
+        <p>Crafting visually appealing and responsive websites tailored to meet client needs. I focus on user experience, clean layouts, and modern design trends to ensure your website stands out.</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-brands fa-app-store-ios"></i>
+        <h2>App design</h2>
+        <p>Designing intuitive and engaging mobile and desktop applications with a focus on functionality, user experience, and performance. My designs are user-centered and adaptable to multiple platforms.</p>
+        <a href="#">Learn more</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ----------------------------------portfolio------------------------------ -->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="images/work-1.png" >
+        <div class="layer">
+          <h3>Social Media App</h3>
+          <p>A dynamic social media platform built with the MERN stack, featuring real-time messaging, user authentication, and feed updates. This app provides a seamless user experience for connecting with friends and sharing content.</p>
+          <a href="https://github.com/mohdzaid2411/Social-media-app-"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/work-2.png" >
+        <div class="layer">
+          <h3>Music App</h3>
+          <p>A modern music streaming app developed using the MERN stack. It allows users to browse through curated playlists, stream their favorite tracks, and manage personal music libraries with a clean and responsive interface.</p>
+          <a href="https://github.com/mohdzaid2411/react-music-app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/work-3.png" >
+        <div class="layer">
+          <h3>Online shopping App</h3>
+          <p>An e-commerce platform created with the MERN stack. Users can browse products, add them to a cart, and securely complete purchases. This app is designed for an easy and intuitive shopping experience.</p>
+          <a href="https://github.com/mohdzaid2411/Online-Shopping-MERN-Stack-webApp"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="btn">See more</a>
+  </div>
+</div>
+<!-- -------------------contact------------------ -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fas fa-paper-plane"></i> zaidjalees2015@gmail.com</p>
+        <p><i class="fas fa-phone-square-alt"></i> 7275957920</p>
+        <div class="social-icons">
+          <a href=""><i class="fab fa-twitter-square"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href=""><i class="fab fa-facebook"></i></a>
+          <a href="https://www.linkedin.com/in/mohd-zaid0406/"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <a href="Resume.pdf" download class="btn btn2">Download Resume</a>    
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>copyright © Mohd Zaid. Made with <i class="fas fa-heart"></i> hard work</p>                             
+  </div>
+</div>
+
+
+<script>
+  var tablinks= document.getElementsByClassName("tab-links")
+  var tabcontents= document.getElementsByClassName("tab-contents")
+
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link")
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab")
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab")
+  }
+</script>
+<script>
+  var sidemenu = document.getElementById("sidemenu");
+  function openmenu(){
+    sidemenu.style.right='0';
+  }
+  function closemenu(){
+    sidemenu.style.right='-200px';
+  }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyODtOq7aNZmup421YqPy7Ky8EOvgmGvLGS7KJMti87SdF2ivWNhwOwoN0sKiEhhhSC8Q/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(()=>{
+          msg.innerHTML=""
+        },4000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
